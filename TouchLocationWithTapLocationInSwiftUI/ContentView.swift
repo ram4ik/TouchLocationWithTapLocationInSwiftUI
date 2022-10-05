@@ -16,6 +16,11 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .background(Color.orange)
+        .onTapGesture { location in
+            print("Tapped \(location.debugDescription)")
+        }
+        .padding()
     }
 }
 
